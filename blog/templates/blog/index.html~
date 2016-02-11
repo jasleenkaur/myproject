@@ -1,11 +1,13 @@
-<div>
-    <h2><a href="/">Django Girls Blog</a></h2>
-</div>
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
 
+{% block content %}
 {% for post in posts %}
     <div>
         <p>published: {{ post.pub_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.post_content|linebreaks }}</p>
     </div>
 {% endfor %}
+{% endblock %}
+

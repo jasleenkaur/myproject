@@ -1,0 +1,8 @@
+{% for q in question %}
+    <h1>{{ q.question_text }}</h1>
+    <ul>
+    {% for choice in q.choice_set.all %}
+        <li><a href=#">{{ choice.choice_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
