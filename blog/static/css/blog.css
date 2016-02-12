@@ -1,11 +1,54 @@
-h1 a {
-    color: #FCA205;
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color:#57A3FA;
+}
+
+.header{
+    background-color:#0c0c0c;
+    border-bottom: 2px solid yellow;
+    height:20%;
+    color: #ffffff;
     font-family: 'Lobster';
-    padding: 20%;
+    font-size:20px;
+    text-align: center;
 }
+.title{
+    padding-top: 30px;
+}
+
+h2{
+color:#0000C4;
+}
+
 p{
-color:pink;
+color:#0c0c0c;
 }
-body {
-    padding-left: 15px;
+
+.content{
+     margin-top:20px;
+     width:100%; 
+}
+.posts{
+    width: 70%;
+    height: auto;
+    margin: 0 auto; 
+    position: relative;
+    border-radius:20px;
+    text-align:center;
+    background-color:#DAE1E3;
+    padding:20px;
+}
+.new{
+    position:relative;
+    margin: 0 auto;
+    width:30%;
+    background-color:#0c0c0c;
+    text-align:center;
+}
+.new a{
+    color:yellow;
+    font-size:30px;
 }

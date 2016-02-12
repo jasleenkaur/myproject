@@ -1,13 +1,13 @@
 {% extends 'blog/base.html' %}
-{% load staticfiles %}
 
 {% block content %}
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.pub_date }}</p>
+    <div class="posts">
         <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.post_content|linebreaks }}</p>
-    </div>
+        <h3>{{ post.post_content}}</h3>
+        <p>published: {{ post.pub_date }}</p>
+    </div>    
+    <br>
 {% endfor %}
 {% endblock %}
 

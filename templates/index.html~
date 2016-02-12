@@ -1,0 +1,4 @@
+{% for p in post %}
+    {{post.title}}<br>
+{% endfor %}
+
