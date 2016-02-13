@@ -9,10 +9,9 @@
 </head>
 <body>
     <div class="header">
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        <div class="title"><h1>My daily dairy</h1></div>
+   <div class="title"><h1>My daily dairy</h1></div>
     </div>
-        
+        <a href = "{% url 'blog:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     <div class="content">       
             {% block content %}
             {% endblock %}
