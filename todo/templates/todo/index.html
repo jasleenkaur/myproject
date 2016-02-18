@@ -1,0 +1,21 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+</style>
+<form action="#" method="POST">
+<table>
+<th>Tasks</th><th>Creation date</th><th>Status</th>
+{% for todo in not_done %}
+   <tr> <td>{{todo.tasks}} </td> <td>{{todo.pub_date}}</td> <td>NOT DONE</td> </tr>
+{% endfor %}
+{% for todo in done %}
+   <tr> <td>{{todo.tasks}} </td> <td>{{todo.pub_date}}</td> <td>DONE</td> </tr>
+{% endfor %}
+</form>
+</table>
+

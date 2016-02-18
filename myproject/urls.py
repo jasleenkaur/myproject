@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 urlpatterns = [
+    url(r'^$', include('todo.urls')),
     url(r'^mysite/', include('mysite.urls')),
     url(r'^blog/', include('blog.urls', namespace="blog")),
     url(r'^polls/', include('polls.urls', namespace="polls")),
